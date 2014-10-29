@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<!-- generated on 06/11/09 15:29:19 by SUMO duarouter Version 0.10.3
+<configuration>
+
+   <input>
+      <net-file>droomdorp.net.xml</net-file>
+      <trip-defs>droomdorp.trip.xml</trip-defs>
+   </input>
+
+   <output>
+      <output-file>droomdorp.rou.xml</output-file>
+   </output>
+
+</configuration>
+-->
+
+<routes>
+   <vtypeDistribution id="dist">
+      <vtype id="type1" accel="1.0" decel="4.5" sigma="0.3" length="12" maxspeed="25" probability="0.1"/>
+      <vtype id="type2" accel="2.0" decel="4.5" sigma="0.3" length="4.5" maxspeed="40" probability="0.9"/>"
+   </vtypeDistribution>
+
+   <routeDistribution id="routedist1">
+      <route id="1" edges="xp1west_out-xp1west xp1west-xp1west_turn xp1west_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2south xp2south-xp2south_out" probability="0.050"/>
+      <route id="2" edges="xp1west_out-xp1west xp1west-xp1west_turn xp1west_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2north xp2north-xp2north_out" probability="0.050"/>
+      <route id="3" edges="xp1west_out-xp1west xp1west-xp1west_turn xp1west_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2east xp2east-xp2east_out" probability="0.4"/>
+      <route id="4" edges="xp1south_out-xp1south xp1south-xp1south_turn xp1south_turn-xp1 xp1-xp1west xp1west-xp1west_out" probability="0.025"/>
+      <route id="5" edges="xp1south_out-xp1south xp1south-xp1south_turn xp1south_turn-xp1 xp1-xp1north xp1north-xp1north_out" probability="0.025"/>
+      <route id="6" edges="xp1south_out-xp1south xp1south-xp1south_turn xp1south_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2east xp2east-xp2east_out" probability="0.050"/>
+      <route id="7" edges="xp1north_out-xp1north xp1north-xp1north_turn xp1north_turn-xp1 xp1-xp1west xp1west-xp1west_out" probability="0.025"/>
+      <route id="8" edges="xp1north_out-xp1north xp1north-xp1north_turn xp1north_turn-xp1 xp1-xp1south xp1south-xp1south_out" probability="0.025"/>
+      <route id="9" edges="xp1north_out-xp1north xp1north-xp1north_turn xp1north_turn-xp1 xp1-xp2turn xp2turn-xp2 xp2-xp2east xp2east-xp2east_out" probability="0.050"/>
+      <route id="10" edges="xp2south_out-xp2south xp2south-xp2south_turn xp2south_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1west xp1west-xp1west_out" probability="0.050"/>
+      <route id="11" edges="xp2south_out-xp2south xp2south-xp2south_turn xp2south_turn-xp2 xp2-xp2north xp2north-xp2north_out" probability="0.025"/>
+      <route id="12" edges="xp2south_out-xp2south xp2south-xp2south_turn xp2south_turn-xp2 xp2-xp2east xp2east-xp2east_out" probability="0.025"/>
+      <route id="13" edges="xp2north_out-xp2north xp2north-xp2north_turn xp2north_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1west xp1west-xp1west_out" probability="0.050"/>
+      <route id="14" edges="xp2north_out-xp2north xp2north-xp2north_turn xp2north_turn-xp2 xp2-xp2south xp2south-xp2south_out" probability="0.025"/>
+      <route id="15" edges="xp2north_out-xp2north xp2north-xp2north_turn xp2north_turn-xp2 xp2-xp2east xp2east-xp2east_out" probability="0.025"/>
+      <route id="16" edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1west xp1west-xp1west_out" probability="0.400"/>
+      <route id="17" edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1south xp1south-xp1south_out" probability="0.050"/>
+      <route id="18" edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp1turn xp1turn-xp1 xp1-xp1north xp1north-xp1north_out" probability="0.050"/>
+      <route id="19" edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp2south xp2south-xp2south_out" probability="0.025"/>
+      <route id="20" edges="xp2east_out-xp2east xp2east-xp2east_turn xp2east_turn-xp2 xp2-xp2north xp2north-xp2north_out" probability="0.025"/>
+   </routeDistribution>
+   
+   <vehicle id="1-4" type="dist" route="routedist1" depart="1" repno="3000" period="2"/>
+   
+</routes>
